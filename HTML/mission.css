@@ -1,0 +1,28 @@
+#body-container {
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block;
+    width: 68%;
+    height: 450px;
+}
+
+#container{
+    border-style: solid;
+    border-width: 2px;
+}
+
+#panels {
+    display: flex;
+    align-content: center;
+}
+
+li {
+    padding: 10%;
+    display: inline;
+}
+
+footer {
+    padding: 2%;
+    margin: 10px;
+    border-style: dashed;
+}
