@@ -2,7 +2,7 @@
 //const apiurl = 'https://api.spacexdata.com/v3/missions';
 
 //get one mission api
-const apiurl = 'https://api.spacexdata.com/v3/missions/{{F4F83DE}';
+const apiurl = "https://api.spacexdata.com/v3/missions/F4F83DE";
 var missionList = [];
 var myMission;
 
