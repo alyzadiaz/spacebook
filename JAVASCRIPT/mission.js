@@ -15,7 +15,8 @@
     var missionList = [];
     
     window.onload = function(){
-        fetch('https://api.spacexdata.com/v3/missions/F3364BF')
+        fetch("https://api.spacexdata.com/v3/missions/F3364BF")
+        .then(response => response.json())
         .then(data => {
             missionList.push(data);
         
@@ -28,10 +29,10 @@
             name.classList.add("name");
 
             //name of mission
-            name.textContent = data.mission_name;
+            name.innerHTML = data.mission_name;
 
             mission.appendChild(name);
-            document.getElementById('name').textContent= "Name: " + data.mission_name;
+            document.getElementById('name').innerHTML= "Name: " + data.mission_name;
 
 
         });
