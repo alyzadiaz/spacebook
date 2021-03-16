@@ -66,3 +66,37 @@ ul input[type = text]{
     border: none;
     border-radius: 30px;
 }
+
+#mission_box {
+    background-color: lightslategray;
+    padding: 20px;
+    margin: 40px;
+    width: max-content;
+    height: max-content;
+    font-family: 'Space Mono';
+}
+
+#mission_box #info {
+    text-align: center;
+}
+
+#info a:hover{
+    background-color: #C32F27;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0);
+}
+
+#info a {
+    text-decoration: none;
+    font-family: space;
+    border-radius: 30px;
+    color: black;
+    display: block;
+    padding: 14px;
+    margin: 6px;
+}
+
+@font-face{
+    font-family: 'Space Mono', monospace;
+    src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+}

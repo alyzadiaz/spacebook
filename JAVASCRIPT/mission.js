@@ -32,7 +32,7 @@
             name.innerHTML = data.mission_name;
 
             mission.appendChild(name);
-            document.getElementById('name').innerHTML= "Name: " + data.mission_name;
+            document.getElementById('name').innerHTML= data.mission_name;
 
 
         });

@@ -18,12 +18,23 @@ window.onload = function(){
         name.innerHTML = data.mission_name;
 
         mission.appendChild(name);
-        document.getElementById('name').innerHTML= "Name: " + data.mission_name;
+        document.getElementById('name').innerHTML= data.mission_name;
         document.getElementById('ID').innerHTML= "Mission ID: " + data.mission_id;
-        document.getElementById('payloads').innerHTML= "Payload IDs: " + data.payload_ids;
-        document.getElementById('description').innerHTML= "Description: " + data.description;
+
+
+        var payload_list = JSON.stringify(data.payload_ids);
+        payload_list = JSON.parse(payload_list);
+
+        var ol = document.getElementById("payloads_list")
+        for(var i=0;i<payload_list.length;i++){
+            var payload = payload_list[i];
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(payload));
+            ol.appendChild(li);
+        }
+
+        //document.getElementById('payloads').innerHTML= data.payload_ids;
+        document.getElementById('details').innerHTML= data.description;
         document.getElementById('twitter').innerHTML= "Twitter Link: " + data.twitter;
-
-
     });
 }
