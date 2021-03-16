@@ -14,7 +14,7 @@ body {
 }
 
 #body-container {
-    width: max-content;
+    width: fit-content;
     height: 450px;
     background-color: lightslategrey;
     -webkit-box-shadow: 5px 5px 15px 5px #656565; 
@@ -23,8 +23,8 @@ body {
 
 
 img {
+    width: 400px;
     padding: 20px;
-    margin-top: 10px;
 }
 
 #container{
