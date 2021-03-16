@@ -14,12 +14,17 @@ body {
 }
 
 #body-container {
-    display: inline-block;
-    width: 68%;
+    width: max-content;
     height: 450px;
     background-color: lightslategrey;
     -webkit-box-shadow: 5px 5px 15px 5px #656565; 
     box-shadow: 5px 5px 15px 5px #656565;   
+}
+
+
+img {
+    padding: 20px;
+    margin-top: 10px;
 }
 
 #container{
@@ -29,7 +34,7 @@ body {
 
 #panels {
     display: flex;
-    align-content: center;
+    justify-content: space-between;
     padding: 2em;
 }
 
