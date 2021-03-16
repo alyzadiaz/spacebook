@@ -74,6 +74,7 @@ ul input[type = text]{
 
 #profile {
     font-family: 'Space Mono';
+    text-align: center;
 }
 
 #profile h1{
@@ -115,6 +116,9 @@ ol {
 li {
     padding: 5px;
     width: max-content;
-     
 }
 
+img {
+    width: 25%;
+    margin-top: 14px;
+}
