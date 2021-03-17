@@ -1,25 +1,3 @@
-//get all mission api
-//const apiurl = 'https://api.spacexdata.com/v3/missions';
-
-//get one mission api
-const apiurl = 'https://api.spacexdata.com/v3/missions/{{F4F83DE}';
-var missionList = [];
-var myMission;
-
-//change counter var, set it to 1 for now since we are only doing 1 mission as a demo
-for(var i = 1;i<=1;i++){
-    var api = apiurl.concat(i);
-    insertMission(api);
-}
-
-window.onload = function() {
-
-    document.getElementById("all-button").addEventListener("click", function(){
-        document.getElementById("push").innerHTML="";
-        for(var i=1;i<=1;i++){
-            insertMission(apiurl.concat(i));
-        }
-    });
 
     //add function later
     /*var searchBtn = document.getElementById("search_button");
@@ -33,28 +11,29 @@ window.onload = function() {
             }
         }
     }); */
-}
 
-function insertMission(api){
-    fetch(api)
-    .then(res => res.json())
-    .then(data => {
-        missionList.push(data);
+    var missionList = [];
+    
+    window.onload = function(){
+        fetch("https://api.spacexdata.com/v3/missions/F3364BF")
+        .then(response => response.json())
+        .then(data => {
+            missionList.push(data);
+        
+            //create HTML elements
+            var main = document.getElementById('main');
+            var mission = document.createElement('div');
+            mission.classList.add("mission");
+            mission.setAttribute("id", data.mission_name);
+            var name = document.createElement('div');
+            name.classList.add("name");
 
-    var main = document.getElementById("here");
-    var mission = document.createElement("div");
-    mission.classList.add("mission");
+            //name of mission
+            name.innerHTML = data.mission_name;
 
-    var name = document.createElement("div");
-    name.classList.add("mission_name");
-    //name.innerHTML = data.name["name-USen"];
+            mission.appendChild(name);
+            document.getElementById('name').innerHTML= data.mission_name;
 
-    mission.appendChild(name);
 
-    document.getElementById("here").appendChild(mission);
-
-        name.onclick = function() {
-        document.getElementById("name") = "Name: " + data.name;
-        document.getElementById("name").classList.add("name");
+        });
     }
-    })}

@@ -9,21 +9,22 @@
     src: url(../RESOURCES/space_age.ttf);
 }
 
+@font-face{
+    font-family: 'Space Mono', monospace;
+    src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+}
+
 body {
     background-color: #9CAFB7;
 }
 
 #body-container {
-    width: fit-content;
+    display: inline-block;
+    width: 68%;
     height: 450px;
     background-color: lightslategrey;
     -webkit-box-shadow: 5px 5px 15px 5px #656565; 
     box-shadow: 5px 5px 15px 5px #656565;   
-}
-
-img {
-    width: 400px;
-    padding: 20px;
 }
 
 #container{
@@ -33,7 +34,7 @@ img {
 
 #panels {
     display: flex;
-    justify-content: space-between;
+    align-content: center;
     padding: 2em;
 }
 
@@ -69,4 +70,55 @@ ul input[type = text]{
     margin: 6px;
     border: none;
     border-radius: 30px;
+}
+
+#profile {
+    font-family: 'Space Mono';
+    text-align: center;
+}
+
+#profile h1{
+    text-align: center;
+    padding: 14px;
+    font-family: space;
+}
+
+#profile #name {
+    text-align: center;
+}
+
+#profile #ID {
+    text-align: center;
+}
+
+#profile_body{
+    display: flex;
+}
+
+#profile_body p{
+    padding: 5%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#profile_body #payloads{
+    padding:50px;
+}
+
+#twitter{
+    text-align: center;
+}
+
+ol {
+    list-style-type: square;
+}
+
+li {
+    padding: 5px;
+    width: max-content;
+}
+
+img {
+    width: 25%;
+    margin-top: 14px;
 }

@@ -1,9 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face{
+    font-family: space;
+    src: url(../RESOURCES/space_age.ttf);
+}
+
+body {
+    background-color: #9CAFB7;
+}
+
 #body-container {
-    border-style: solid;
-    border-width: 2px;
     display: inline-block;
     width: 68%;
     height: 450px;
+    background-color: lightslategrey;
+    -webkit-box-shadow: 5px 5px 15px 5px #656565; 
+    box-shadow: 5px 5px 15px 5px #656565;   
 }
 
 #container{
@@ -14,15 +30,73 @@
 #panels {
     display: flex;
     align-content: center;
+    padding: 2em;
 }
 
-li {
-    padding: 10%;
-    display: inline;
+ul {
+    background-color: lightslategray;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-family: space;
+    font-size: 24px;
 }
 
-footer {
-    padding: 2%;
-    margin: 10px;
-    border-style: dashed;
+li a {
+    text-decoration: none;
+    border-radius: 30px;
+    color: black;
+    display: block;
+    padding: 14px;
+    margin: 6px;
+}
+
+ul a:hover {
+    background-color: #C32F27;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0);
+}
+
+ul input[type = text]{
+    float: right;
+    padding: 14px;
+    margin: 6px;
+    border: none;
+    border-radius: 30px;
+}
+
+#mission_box {
+    background-color: lightslategray;
+    padding: 20px;
+    margin: 40px;
+    width: max-content;
+    height: max-content;
+    font-family: 'Space Mono';
+}
+
+#mission_box #info {
+    text-align: center;
+}
+
+#info a:hover{
+    background-color: #C32F27;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0);
+}
+
+#info a {
+    text-decoration: none;
+    font-family: space;
+    border-radius: 30px;
+    color: black;
+    display: block;
+    padding: 14px;
+    margin: 6px;
+}
+
+@font-face{
+    font-family: 'Space Mono', monospace;
+    src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 }
