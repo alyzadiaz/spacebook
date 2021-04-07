@@ -15,14 +15,16 @@ body {
 
 #body-container {
     width: fit-content;
-    height: 450px;
     background-color: lightslategrey;
     -webkit-box-shadow: 5px 5px 15px 5px #656565; 
     box-shadow: 5px 5px 15px 5px #656565;   
 }
 
-
-
+#body-container img {
+    float: left;
+    height: 350px;
+    object-fit: cover;
+}
 
 #container{
     border-style: solid;
