@@ -70,3 +70,15 @@ ul input[type = text]{
     border: none;
     border-radius: 30px;
 }
+
+.satellite {
+    position: absolute;
+    left: 315px;
+    top: 350px;
+    animation: myOrbit 4s linear infinite;
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
