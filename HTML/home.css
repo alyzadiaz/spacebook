@@ -32,10 +32,10 @@ body {
 }
 
 #satellite {
-    background-image:url("../RESOURCES/Iridium-NEXT-3.jpg");
-    background-size: 40px;
-    height: 40px;
-    width: 40px;
+    background-image:url("../RESOURCES/Satellite.png");
+    background-size: 70px;
+    height: 70px;
+    width: 70px;
     left: 275px;
     position:absolute;
     top:275px; /* and play around with this */
@@ -81,7 +81,7 @@ ul input[type = text]{
     border-radius: 30px;
 }
 
-.satellite {
+.S_animate {
     position: absolute;
     left: 315px;
     top: 350px;
