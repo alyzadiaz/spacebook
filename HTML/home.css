@@ -31,6 +31,16 @@ body {
     border-width: 2px;
 }
 
+#satellite {
+    background-image:url("../RESOURCES/Iridium-NEXT-3.jpg");
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+    left: 275px;
+    position:absolute;
+    top:275px; /* and play around with this */
+}
+
 #panels {
     display: flex;
     justify-content: space-between;
