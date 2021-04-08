@@ -67,27 +67,27 @@ ul input[type = text]{
     border-radius: 30px;
 }
 
-#mission_box {
+.mission {
+    display: inline-block;
+    flex-direction: column;
     background-color: lightslategray;
     padding: 20px;
     margin: 40px;
     width: max-content;
     height: max-content;
     font-family: 'Space Mono';
-}
-
-#mission_box #info {
     text-align: center;
 }
 
-#info a:hover{
+.mission a:hover{
     background-color: #C32F27;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0);
 }
 
-#info a {
+.mission a {
     text-decoration: none;
+    text-align: center;
     font-family: space;
     border-radius: 30px;
     color: black;
