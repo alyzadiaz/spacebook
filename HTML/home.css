@@ -33,22 +33,24 @@ body {
 
 #Starlink {
     background-image:url("../RESOURCES/Starlink.png");
-    background-size: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 80px;
     width: 80px;
     left: 275px;
     position:absolute;
-    top:275px; /* and play around with this */
+    top:275px;
 }
 
 #Roadster {
     background-image:url("../RESOURCES/Roadster.jpg");
+    background-repeat: no-repeat;
     background-size: 80px;
     height: 80px;
     width: 80px;
-    left: 400px;
+    left: 50px;
     position:absolute;
-    top:400px; /* and play around with this */
+    top:375px;
 }
 
 #panels {
