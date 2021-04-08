@@ -72,53 +72,70 @@ ul input[type = text]{
     border-radius: 30px;
 }
 
-#profile {
+#here {
+    margin: 30px;
+}
+
+.center {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+    padding: 10px;
+  }
+
+.title{
+    font-family: space;
+    font-size: 28px;
+    padding: 10px;
+}
+
+.mission {
+    background-color: lightslategray;
     font-family: 'Space Mono';
     text-align: center;
+    border-radius: 30px;
 }
 
-#profile h1{
+.mission a:hover{
+    background-color: #C32F27;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0);
+}
+
+.table{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.status {
+    font-size: 24px;
+}
+
+.mission a {
+    text-decoration: none;
     text-align: center;
-    padding: 14px;
     font-family: space;
+    border-radius: 30px;
+    color: black;
+    display: block;
+    padding: 14px;
+    margin: 6px;
 }
 
-#profile #name {
-    text-align: center;
+.mission img {
+    height: 300px;
+    width: auto;
+    border-radius: 30px;
 }
 
-#profile #ID {
-    text-align: center;
+.blink_me {
+    animation: blinker 1s linear infinite;
 }
-
-#profile_body{
-    display: flex;
-}
-
-#profile_body p{
-    padding: 5%;
-    text-align: justify;
-    font-size: 20px;
-}
-
-#profile_body #payloads{
-    padding:50px;
-}
-
-#twitter{
-    text-align: center;
-}
-
-ol {
-    list-style-type: square;
-}
-
-li {
-    padding: 5px;
-    width: max-content;
-}
-
-img {
-    width: 25%;
-    margin-top: 14px;
+  
+@keyframes blinker {
+    50%{color: #C32F27;}
+    100%{color: blue;}
+    
 }
