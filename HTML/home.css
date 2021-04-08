@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #9CAFB7;
+    background-color: #000000;
 }
 
 #body-container {
@@ -31,14 +31,24 @@ body {
     border-width: 2px;
 }
 
-#satellite {
-    background-image:url("../RESOURCES/Satellite.png");
-    background-size: 70px;
-    height: 70px;
-    width: 70px;
+#Starlink {
+    background-image:url("../RESOURCES/Starlink.png");
+    background-size: 80px;
+    height: 80px;
+    width: 80px;
     left: 275px;
     position:absolute;
     top:275px; /* and play around with this */
+}
+
+#Roadster {
+    background-image:url("../RESOURCES/Roadster.jpg");
+    background-size: 80px;
+    height: 80px;
+    width: 80px;
+    left: 400px;
+    position:absolute;
+    top:400px; /* and play around with this */
 }
 
 #panels {
@@ -85,10 +95,22 @@ ul input[type = text]{
     position: absolute;
     left: 315px;
     top: 350px;
-    animation: myOrbit 4s linear infinite;
+    animation: myOrbit 10s linear infinite;
 }
 
 @keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+.R_animate {
+    position: absolute;
+    left: 315px;
+    top: 350px;
+    animation: myOrbit2 10s linear infinite;
+}
+
+@keyframes myOrbit2 {
+    from { 	transform: rotate(0deg) translateX(200px); }
+	to   {  transform: rotate(360deg) translateX(200px); }
 }
