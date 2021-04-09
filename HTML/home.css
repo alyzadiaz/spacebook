@@ -14,15 +14,13 @@ body {
 }
 
 #body-container {
-    width: fit-content;
-    background-color: lightslategrey;
-    -webkit-box-shadow: 5px 5px 15px 5px #656565; 
-    box-shadow: 5px 5px 15px 5px #656565;   
+    width: 100%;
+    background-color: lightslategrey;   
 }
 
 #body-container img {
     float: left;
-    height: 350px;
+    height: 495px;
     object-fit: cover;
 }
 
@@ -37,9 +35,9 @@ body {
     background-repeat: no-repeat;
     height: 80px;
     width: 80px;
-    left: 275px;
+    left: 390px;
     position:absolute;
-    top:275px;
+    top:325px;
 }
 
 #Roadster {
@@ -48,7 +46,7 @@ body {
     background-size: 80px;
     height: 80px;
     width: 80px;
-    left: 50px;
+    left: 100px;
     position:absolute;
     top:375px;
 }
@@ -56,7 +54,7 @@ body {
 #panels {
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding-top: 2em;
 }
 
 ul {
