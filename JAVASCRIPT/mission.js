@@ -43,7 +43,7 @@ function createDetails(web, desc, payload, manuf, twit, wiki, id, name){
     var title = "<title>Mission</title>";
     var css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"mission_detail.css\">";
     var font = "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"> <link href=\"https://fonts.googleapis.com/css2?family=Space+Mono&display=swap\" rel=\"stylesheet\">";
-    var nav = "<div><ul><li><a href=\"home.html\">Home</a></li><li><a href=\"mission.html\">Missions</a></li><li><a href=\"rockets.html\">Rockets</a></li><li><a href=\"live.html\">Live</a></li><li><input type=\"text\" placeholder=\"Search\"></li></ul></div>";
+    var nav = "<div><ul><li><a href=\"home.html\">Home</a></li><li><a href=\"mission.html\">Missions</a></li><li><a href=\"rockets.html\">Rockets</a></li><li><a href=\"https://www.spacex.com/launches/\"target=\"_blank\" rel=\"noopener noreferrer\">Live</a></li><li><input type=\"text\" placeholder=\"Search\"></li></ul></div>";
     
 
     var string = "";
