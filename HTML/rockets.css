@@ -9,6 +9,11 @@
     src: url(../RESOURCES/space_age.ttf);
 }
 
+@font-face{
+    font-family: 'Space Mono', monospace;
+    src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+}
+
 body {
     background-color: #9CAFB7;
 }
@@ -67,14 +72,26 @@ ul input[type = text]{
     border-radius: 30px;
 }
 
+#here {
+    margin: 30px;
+}
+
+.center {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+    padding: 10px;
+  }
+
+.title{
+    font-family: space;
+    font-size: 28px;
+    padding: 10px;
+}
+
 .mission {
-    display: inline-block;
-    flex-direction: column;
     background-color: lightslategray;
-    padding: 20px;
-    margin: 40px;
-    width: max-content;
-    height: max-content;
     font-family: 'Space Mono';
     text-align: center;
     border-radius: 30px;
@@ -84,6 +101,16 @@ ul input[type = text]{
     background-color: #C32F27;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0);
+}
+
+.table{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.status {
+    font-size: 24px;
 }
 
 .mission a {
@@ -97,7 +124,18 @@ ul input[type = text]{
     margin: 6px;
 }
 
-@font-face{
-    font-family: 'Space Mono', monospace;
-    src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+.mission img {
+    height: 300px;
+    width: auto;
+    border-radius: 30px;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+    50%{color: #C32F27;}
+    100%{color: blue;}
+    
 }
