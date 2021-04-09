@@ -43,7 +43,7 @@ body {
 }
 
 #Roadster {
-    background-image:url("../RESOURCES/Roadster.jpg");
+    background-image:url("../RESOURCES/Roadster.png");
     background-repeat: no-repeat;
     background-size: 80px;
     height: 80px;
@@ -101,15 +101,15 @@ ul input[type = text]{
 }
 
 @keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(100px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
 }
 
 .R_animate {
     position: absolute;
     left: 315px;
     top: 350px;
-    animation: myOrbit2 10s linear infinite;
+    animation: myOrbit2 15s linear infinite;
 }
 
 @keyframes myOrbit2 {
