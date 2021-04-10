@@ -16,26 +16,49 @@
 
 body {
     background-color: #9CAFB7;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
 
-#body-container {
-    display: inline-block;
-    width: 68%;
-    height: 450px;
-    background-color: lightslategrey;
-    -webkit-box-shadow: 5px 5px 15px 5px #656565; 
-    box-shadow: 5px 5px 15px 5px #656565;   
-}
-
-#container{
-    border-style: solid;
-    border-width: 2px;
-}
-
-#panels {
+.deets {
+    background-color: black;
     display: flex;
-    align-content: center;
-    padding: 2em;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 15px;
+}
+
+.deets p{
+    text-align: left;
+    color: white;
+    padding: 30px;
+}
+
+.group {
+    background-color: black;
+    border-radius: 30px;
+    color:white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    min-width: fit-content;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 30px;
+    margin: 10px;
+    
+}
+
+.component h2{
+    color:#C32F27;
 }
 
 ul {
@@ -64,12 +87,83 @@ ul a:hover {
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0);
 }
 
-ul input[type = text]{
+input[type = "text"]{
     float: right;
     padding: 14px;
     margin: 6px;
     border: none;
     border-radius: 30px;
+    font-family: 'Space Mono';
+}
+
+input[type = "submit"]{
+    margin-left: -50px;
+    height: 20px;
+    width: 50px;
+}
+
+.inside {
+    width: 300px;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    right: 20px;
+    z-index: 2;
+    border: none;
+    top: 16px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #C32F27;
+    transform: translateX(2px);
+    padding-left: 10px;
+}
+
+#miss_link_box{
+    padding:10px;
+}
+
+.miss_link {
+    border-radius: 30px;
+    background-color: #C32F27;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+.miss_link span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.miss_link span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.miss_link:hover span {
+    padding-right: 25px;
+}
+  
+.miss_link:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 #profile {
@@ -102,15 +196,17 @@ ul input[type = text]{
 }
 
 #profile_body #payloads{
+    background-color: black;
+    border-radius: 30px;
+    color: white;
     padding:50px;
-}
-
-#twitter{
-    text-align: center;
+    margin: 20px;
 }
 
 ol {
     list-style-type: square;
+    min-width: fit-content;
+    list-style: none;
 }
 
 li {
@@ -121,4 +217,51 @@ li {
 img {
     width: 25%;
     margin-top: 14px;
+    border-radius: 30px;
+}
+
+video {
+    border-radius: 30px;
+    margin: 40px;
+}
+
+#wiki{
+    text-decoration: none;
+    border-radius: 30px;
+    color: white;
+    display: block;
+    padding: 14px;
+    margin: 6px;
+}
+
+#twitter{
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid white;
+    color: white;
+    display: block;
+    padding: 14px;
+    margin: 6px;
+}
+
+#twitter:hover{
+    background-color: #C32F27;
+    border: none;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0); 
+    box-shadow: 0px 10px 13px -7px black, 5px 5px 15px 4px rgba(101,101,101,0);
+}
+
+#wiki:hover{
+    background-color: #C32F27;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 4px rgba(101,101,101,0); 
+    box-shadow: 0px 10px 13px -7px white, 5px 5px 15px 4px rgba(101,101,101,0);
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+    50%{color: #C32F27;}
+    100%{color: blue;} 
 }
