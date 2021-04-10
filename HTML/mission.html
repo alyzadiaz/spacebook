@@ -5,12 +5,10 @@
         <link rel="stylesheet" type="text/css" href="mission.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-        <!--JQUERY source script
-        <script src="../JAVASCRIPT/jquery-3.6.0.js"></script>-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="../JAVASCRIPT/mission.js"></script>
         <title>Spacebook Missions</title>
     </head>
-
     <div id="container">
         <p>LOGO</p>
     </div>
@@ -20,12 +18,17 @@
             <li><a href="mission.html">Missions</a></li>
             <li><a href="rockets.html">Rockets</a></li>
             <li><a href="https://www.spacex.com/launches/"target="_blank" rel="noopener noreferrer">Live</a></li>
-            <li><input type="text" placeholder="Search"></li>
+            <div class="inside">
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
         </ul>
     </div>
     <body>
-
         <div id = "here"></div>
-
     </body>
+    <footer>
+        <p>Spacebook is brought to you by Team 12. Check out our GitHub repo!</p>
+        <div id="git"><a href="https://github.com/alyzadiaz/spacebook"><i class="fa fa-github fa-2x"></i></a></div>
+    </footer>
 </html>
