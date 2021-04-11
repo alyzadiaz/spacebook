@@ -43,14 +43,16 @@ function createDetails(web, desc, payload, manuf, twit, wiki, id, name){
     var test = window.open("../HTML/testing.html");
     
     var title = "<title>Mission</title>";
-    var css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"mission_detail.css\">";
+    var css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"mission_detail.css\">"+
+    "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">";
     var font = "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"> <link href=\"https://fonts.googleapis.com/css2?family=Space+Mono&display=swap\" rel=\"stylesheet\">";
-    var nav = "<div><ul><li><a href=\"home.html\">Home</a></li><li><a href=\"mission.html\">Missions</a></li><li><a href=\"rockets.html\">Rockets</a></li><li><a href=\"live.html\">Live</a></li><li><input type=\"text\" placeholder=\"Search\"></li></ul></div>";
+    var search = "<div class=\"inside\"><input type=\"text\" placeholder=\"Search\"><button type=\"submit\"><i class=\"fa fa-search\"></i></button></div>";
+    var nav = "<div><ul><li><a href=\"home.html\">Home</a></li><li><a href=\"mission.html\">Missions</a></li><li><a href=\"rockets.html\">Rockets</a></li><li><a href=\"https://www.spacex.com/launches/\"target=\"_blank\" rel=\"noopener noreferrer\">Live</a></li>"+search+"</ul></div>";
     
 
     var string = "";
     for(var i=0;i<payload.length;i++){
-        string += (payload[i]+"\n");
+        string += ("<li>"+payload[i]+"</li>");
     }
 
     var body = 
@@ -58,19 +60,19 @@ function createDetails(web, desc, payload, manuf, twit, wiki, id, name){
         "<div id=\"info\">"+
             "<div id=\"profile\">"+
                 "<h1>Mission Details</h1>"+
-                "<a href=\""+web+"\">"+name+"</a>"+
+                "<div id=\"miss_link_box\"><a href=\""+web+"\" class=\"miss_link\"><span>"+name+"</span></a></div>"+
                 "<h2 id=\"ID\">Mission ID: "+id+" </h2>"+
                 "<img src="+findImage(name)+">"+
                 "<div id=\"profile_body\">"+
                     "<div id=\"payloads\">"+
                         "<h2>Payloads</h2>"+
                         "<ol id=\"payloads_list\">"+string+"</ol>"+
+                        "<h2><a href="+twit+" id=\"twitter\">Twitter</a></h2>"+
                     "</div>"+
                     "<div id=\"description\">"+
                         "<p id=\"details\">"+desc+"</p>"+
                     "</div>"+
                 "</div>"+
-                "<h2><a href="+twit+">Twitter link</a></h2>"+
             "</div>"+
             "</div>"+
         "</div>"+
