@@ -14,6 +14,15 @@
     src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 }
 
+#navigation{
+    padding-top:20px;
+}
+
+#logo{
+    height: 50px;
+    padding: 5px;
+}
+
 body {
     background-color: black;
     background-image: url(../RESOURCES/stars.jpg);

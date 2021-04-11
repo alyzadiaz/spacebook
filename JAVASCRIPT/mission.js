@@ -46,8 +46,7 @@ function createDetails(web, desc, payload, manuf, twit, wiki, id, name){
     var css = "<link rel=\"stylesheet\" type=\"text/css\" href=\"mission_detail.css\">"+
     "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">";
     var font = "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\"> <link href=\"https://fonts.googleapis.com/css2?family=Space+Mono&display=swap\" rel=\"stylesheet\">";
-    var search = "<div class=\"inside\"><input type=\"text\" placeholder=\"Search\"><button type=\"submit\"><i class=\"fa fa-search\"></i></button></div>";
-    var nav = "<div><ul><li><a href=\"home.html\">Home</a></li><li><a href=\"mission.html\">Missions</a></li><li><a href=\"rockets.html\">Rockets</a></li><li><a href=\"https://www.spacex.com/launches/\"target=\"_blank\" rel=\"noopener noreferrer\">Live</a></li>"+search+"</ul></div>";
+    var nav = "<div id=\"navigation\"><ul><li><img src=\"../RESOURCES/logo.png\" id=\"logo\"></li><li><a href=\"home.html\">Home</a></li><li><a href=\"mission.html\">Missions</a></li><li><a href=\"rockets.html\">Rockets</a></li><li><a href=\"https://www.spacex.com/launches/\"target=\"_blank\" rel=\"noopener noreferrer\">Live</a></li></ul></div>";
     
 
     var string = "";
@@ -80,7 +79,6 @@ function createDetails(web, desc, payload, manuf, twit, wiki, id, name){
 
     var html = "<html><head>"+title+"</head>"+font+css+nav+"<body>"+body+"</body></html>";
     test.document.write(html);
-    
 }
 
 function findImage(name){
@@ -117,40 +115,30 @@ function findImage(name){
         case "Thaicom":
             res += "Thaicom.jpg";
             break;
-
     }
 
     return res;
 }
-
-
-
-
 
 window.onload = function() {
     for(var i=0;i<ids.length;i++){
         insertMission(api.concat(ids[i]));
     }
 
-//search button
-var searchBtn = document.getElementById("search_button");
-var search = document.getElementById("search");
+    var searchBtn = document.getElementById("search_button");
+    var search = document.getElementById("search");
 
-searchBtn.addEventListener("click", function(){
-    var name = search.value;
-    var goTo = document.getElementById(name);
-    //goTo.scrollIntoView({ block: 'center' });
-    
-    highlight(goTo);
-    
-    function highlight(goTo){
-       var orig = goTo.style.backgroundColor;
-       goTo.style.backgroundColor = "blue";
-       setTimeout(function(){
-            goTo.style.backgroundColor = orig;
-       }, 2500);
-    }
-});
-
+    searchBtn.addEventListener("click", function(){
+        var name = search.value;
+        var goTo = document.getElementById(name);
+        
+        highlight(goTo);
+        
+        function highlight(goTo){
+            var orig = goTo.style.backgroundColor;
+            goTo.style.backgroundColor = "blue";
+            setTimeout(function(){goTo.style.backgroundColor = orig;}, 2500);
+        }
+    });
 }
 
