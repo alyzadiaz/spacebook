@@ -138,7 +138,6 @@ var search = document.getElementById("search");
 
 searchBtn.addEventListener("click", function(){
     var name = search.value;
-    console.log(name);
     var goTo = document.getElementById(name);
     //goTo.scrollIntoView({ block: 'center' });
     
