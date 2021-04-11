@@ -5,6 +5,28 @@ window.onload = function() {
     for(var i=0;i<ids.length;i++){
         insertRocket(api.concat(ids[i]));
     }
+
+
+//search button
+var searchBtn = document.getElementById("search_button");
+var search = document.getElementById("search");
+
+searchBtn.addEventListener("click", function(){
+    var name = search.value;
+    var goTo = document.getElementById(name);
+    //goTo.scrollIntoView({ block: 'center' });
+    
+    highlight(goTo);
+    
+    function highlight(goTo){
+       var orig = goTo.style.backgroundColor;
+       goTo.style.backgroundColor = "blue";
+       setTimeout(function(){
+            goTo.style.backgroundColor = orig;
+       }, 2500);
+    }
+});
+
 }
 
 function insertRocket(api){
@@ -19,6 +41,7 @@ function insertRocket(api){
             var title = document.createElement("div");
             title.classList.add("title");
             title.innerHTML = data.rocket_name;
+            rocket.id = data.rocket_name;
 
             var img = document.createElement("img");
             img.classList.add("img");
