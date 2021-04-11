@@ -8,6 +8,8 @@ function insertMission(api){
             var main = document.getElementById("here");
             var mission = document.createElement("div");
             mission.classList.add("mission");
+            mission.id = data.mission_name;
+            //mission.classList.add(data.mission_name);
 
             var title = document.createElement("div");
             title.classList.add("title");
@@ -119,8 +121,34 @@ function findImage(name){
     return res;
 }
 
+
+
+
+
 window.onload = function() {
     for(var i=0;i<ids.length;i++){
         insertMission(api.concat(ids[i]));
     }
+
+//search button
+var searchBtn = document.getElementById("search_button");
+var search = document.getElementById("search");
+
+searchBtn.addEventListener("click", function(){
+    var name = search.value;
+    var goTo = document.getElementsById(name);
+    //goTo.scrollIntoView({ block: 'center' });
+    
+    highlight(goTo);
+    
+    function highlight(goTo){
+       var orig = goTo.style.backgroundColor;
+       goTo.style.backgroundColor = "blue";
+       setTimeout(function(){
+            goTo.style.backgroundColor = orig;
+       }, 2500);
+    }
+});
+
 }
+
