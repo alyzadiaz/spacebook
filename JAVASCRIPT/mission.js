@@ -104,7 +104,7 @@ function findImage(name){
             res += "OG2.jpg";
             break;
         case "Iridium NEXT":
-            res += "Iridium-Next-3.jpg";
+            res += "Iridium-NEXT-3.jpg";
             break;
         case "SES":
             res += "SES.png";
