@@ -1,6 +1,19 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   
+// Title:       Spacebook
+// Files:       mission.html, mission.css
+// Semester:    Software Engineering - Spring 2021
+//
+// Author:      Alyza Diaz Rodriguez, Danielle Shackley
+// Email:       diazrodrigueza@wit.edu, shackleyd@wit.edu
+//
+////////////////////////////////////////////////////////////////////////////
+
+//Setting up API call and mission id's 
 const api = "https://api.spacexdata.com/v3/missions/";
 var ids = ["9D1B7E0","F4F83DE","F3364BF","EE86F74","6C42550","FE3533D","593B499","CE91D46","2CF444A","F7709F2"];
 
+//Looping through to pull specific data from mission API
 function insertMission(api){
     fetch(api)
         .then(response => response.json())
@@ -9,7 +22,6 @@ function insertMission(api){
             var mission = document.createElement("div");
             mission.classList.add("mission");
             mission.id = data.mission_name;
-            //mission.classList.add(data.mission_name);
 
             var title = document.createElement("div");
             title.classList.add("title");
@@ -39,6 +51,7 @@ function insertMission(api){
     });
 }
 
+//Function to create html element for each mission
 function createDetails(web, desc, payload, manuf, twit, wiki, id, name){
     var test = window.open("../HTML/testing.html");
     
@@ -120,14 +133,15 @@ function findImage(name){
     return res;
 }
 
+//Loading window with elements 
 window.onload = function() {
     for(var i=0;i<ids.length;i++){
         insertMission(api.concat(ids[i]));
     }
 
+    //Search bar function-highlights searched for mission
     var searchBtn = document.getElementById("search_button");
     var search = document.getElementById("search");
-
     searchBtn.addEventListener("click", function(){
         var name = search.value;
         var goTo = document.getElementById(name);

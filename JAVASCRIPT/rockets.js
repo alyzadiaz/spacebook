@@ -1,3 +1,15 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   
+// Title:       Spacebook
+// Files:       rockets.html, rockets.css
+// Semester:    Software Engineering - Spring 2021
+//
+// Author:      Alyza Diaz Rodriguez, Danielle Shackley
+// Email:       diazrodrigueza@wit.edu, shackleyd@wit.edu
+//
+////////////////////////////////////////////////////////////////////////////
+
+//Setting up API call and mission id's 
 const api = "https://api.spacexdata.com/v3/rockets/";
 const ids = ["falcon1","falcon9","falconheavy","starship"];
 
@@ -5,30 +17,9 @@ window.onload = function() {
     for(var i=0;i<ids.length;i++){
         insertRocket(api.concat(ids[i]));
     }
-
-
-//search button
-var searchBtn = document.getElementById("search_button");
-var search = document.getElementById("search");
-
-searchBtn.addEventListener("click", function(){
-    var name = search.value;
-    var goTo = document.getElementById(name);
-    //goTo.scrollIntoView({ block: 'center' });
-    
-    highlight(goTo);
-    
-    function highlight(goTo){
-       var orig = goTo.style.backgroundColor;
-       goTo.style.backgroundColor = "blue";
-       setTimeout(function(){
-            goTo.style.backgroundColor = orig;
-       }, 2500);
-    }
-});
-
 }
 
+//Function to pull details from API
 function insertRocket(api){
     fetch(api)
         .then(response => response.json())
