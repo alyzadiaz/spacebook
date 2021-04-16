@@ -53,7 +53,7 @@ Akeylah Roscoe Hunter - [LinkedIn]() - roscoehuntera@wit.edu
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [SpaceX](https://spacex.com)
+* [SpaceX](https://api.spacexdata.com/)
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
 * [Img Shields](https://shields.io)
