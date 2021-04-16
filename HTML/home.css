@@ -33,11 +33,6 @@ body {
     object-fit: cover;
 }
 
-#container{
-    border-style: solid;
-    border-width: 2px;
-}
-
 #Starlink {
     background-image:url("../RESOURCES/Starlink.png");
     background-size: contain;
