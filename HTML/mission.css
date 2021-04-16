@@ -50,15 +50,6 @@ button {
     padding-right: 10px;
 }
 
-#body-container {
-    display: inline-block;
-    width: 68%;
-    height: 450px;
-    background-color: lightslategrey;
-    -webkit-box-shadow: 5px 5px 15px 5px #656565; 
-    box-shadow: 5px 5px 15px 5px #656565;   
-}
-
 ul {
     background-color: lightslategray;
     display: flex;
