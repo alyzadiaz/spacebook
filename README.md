@@ -4,9 +4,7 @@
 <!-- LOGO -->
 <br/>
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="RESOURCES/logo.png">
-  </a>
 </p>
 
 <!-- TABLE OF CONTENTS -->
