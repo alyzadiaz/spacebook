@@ -34,12 +34,18 @@ Check out our [live version](https://alyzadiaz.github.io/spacebook/HTML/home.htm
 </details>
 
 ## Introduction
+A website with an interactive collection of space missions and rockets.
+
 <br/>
 <p align="center">
   <img src="RESOURCES/PROJECT IMAGES/spacebook-home.PNG">
 </p>
 
-
+## Features
+1. Interactive Solar System Graphic 
+    * Click man made space objects
+2. Search for Specific Space Missions
+    * Search Bar Tool
 ## Getting Started
 
 ### Installation and Setup
