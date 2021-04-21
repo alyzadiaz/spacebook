@@ -24,7 +24,6 @@ Check out our [live version](https://alyzadiaz.github.io/spacebook/HTML/home.htm
     <li><a href="#getting-started">Getting Started</a>
         <ul>
           <li><a href="#installation-and-setup">Installation and Setup</a></li>
-          <li><a href="#run">Run</a></li>
       </ul>
     </li>
     <li><a href="#demo-video">Demo Video</a></li>
@@ -51,13 +50,11 @@ A website with an interactive collection of space missions and rockets.
 ### Installation and Setup
 1. Install [mySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/) if it is not alrady installed.
 2. Clone Repository
-3. In a different Shall start mySQL
+3. In a different shell start mySQL
 
-
-### Run
 
 ## Demo Video
-https://www.youtube.com/watch?v=Rhb7AdnXmIo&ab_channel=AkeylahRoscoeHunter
+[Youtube](https://www.youtube.com/watch?v=Rhb7AdnXmIo&ab_channel=AkeylahRoscoeHunter)
 ## Contact
 
 * Danielle Shackley - shackleyd@wit.edu, Team Lead
