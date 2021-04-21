@@ -27,7 +27,6 @@ Check out our [live version](https://alyzadiaz.github.io/spacebook/HTML/home.htm
           <li><a href="#run">Run</a></li>
       </ul>
     </li>
-    <li><a href="#functions">Functions</a></li>
     <li><a href="#demo-video">Demo Video</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -52,23 +51,6 @@ A website with an interactive collection of space missions and rockets.
 ### Installation and Setup
 
 ### Run
-
-
-## Functions
-<ol>
-    <li>Function #1
-        <ul>
-            <li>Sub function</li>
-            <li>Sub function</li>
-        </ul>
-    </li>
-    <li>Function #2
-        <ul>
-            <li>Sub function</li>
-            <li>Sub function</li>
-        </ul>
-    </li>
-</ol>
 
 ## Demo Video
 https://www.youtube.com/watch?v=Rhb7AdnXmIo&ab_channel=AkeylahRoscoeHunter
