@@ -20,7 +20,7 @@ Check out our [live version](https://alyzadiaz.github.io/spacebook/HTML/home.htm
     <li>
       <a href="#introduction">Introduction</a>
     </li>
-      <li><a href+"#features">Features</a>
+    <li><a href="#features">Features</a>
     <li><a href="#getting-started">Getting Started</a>
         <ul>
           <li><a href="#installation-and-setup">Installation and Setup</a></li>
