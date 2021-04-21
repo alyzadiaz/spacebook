@@ -111,37 +111,12 @@ function createDetails(web, desc, payload, manuf, twit, wiki, id, name){
 function findImage(name){
     var res = "../RESOURCES/";
 
-    switch(name){
-        case "AsiaSat":
-            res += "AsiaSat.jpg";
-            break;
-        case "ABS":
-            res += "/ABS.jpg";
-            break;
-        case "Commercial Resupply Services":
-            res += "CRS.jpg";
-            break;
-        case "Eutelsat":
-            res += "Eutelsat.jpg";
-            break;
-        case "JCSAT":
-            res += "JCSAT.jpg";
-            break;
-        case "Orbcomm OG2":
-            res += "OG2.jpg";
-            break;
-        case "Iridium NEXT":
-            res += "Iridium-NEXT-3.jpg";
-            break;
-        case "SES":
-            res += "SES.png";
-            break;
-        case "Telstar":
-            res += "Telstar.jpg";
-            break;
-        case "Thaicom":
-            res += "Thaicom.jpg";
-            break;
+    if(name=="SES"){
+        res += name+".png";
+    }else if(name=="Iridium NEXT"){
+        res += "Iridium-NEXT-3.jpg";
+    }else{
+        res += name+".jpg";
     }
 
     return res;
