@@ -50,9 +50,11 @@ A website with an interactive collection of space missions and rockets.
 ### Installation and Setup
 1. Install [mySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/) if it is not alrady installed.
 2. Clone Repository
+
     ```sh
     gh repo clone alyzadiaz/spacebook
     ```
+    
 3. In a different shell start mySQL
 
 
