@@ -1,3 +1,14 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   
+// Title:       Spacebook
+// Files:       home.html, home.css
+// Semester:    Software Engineering - Spring 2021
+//
+// Author:      Alyza Diaz Rodriguez, Danielle Shackley
+// Email:       diazrodrigueza@wit.edu, shackleyd@wit.edu
+//
+////////////////////////////////////////////////////////////////////////////
+
 var formdata = new FormData();
 var ids = [];
 

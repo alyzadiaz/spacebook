@@ -14,6 +14,15 @@
     src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 }
 
+#navigation{
+    padding-top:20px;
+}
+
+#logo{
+    height: 50px;
+    padding: 5px;
+}
+
 body {
     background-color: black;
     background-image: url(../RESOURCES/stars.jpg);
@@ -39,15 +48,6 @@ button {
     transform: translateX(2px);
     padding-left: 10px;
     padding-right: 10px;
-}
-
-#body-container {
-    display: inline-block;
-    width: 68%;
-    height: 450px;
-    background-color: lightslategrey;
-    -webkit-box-shadow: 5px 5px 15px 5px #656565; 
-    box-shadow: 5px 5px 15px 5px #656565;   
 }
 
 ul {

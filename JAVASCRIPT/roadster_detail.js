@@ -1,3 +1,14 @@
+///////////////////////////////////////////////////////////////////////////////
+//                   
+// Title:       Spacebook
+// Files:       roadster_detail.html, mission_detail.css
+// Semester:    Software Engineering - Spring 2021
+//
+// Author:      Danielle Shackley, Alyza Diaz Rodriguez
+// Email:       shackleyd@wit.edu, diazrodrigueza@wit.edu
+//
+////////////////////////////////////////////////////////////////////////////
+
 var roadsterinfo = [];
 
 window.onload = function(){

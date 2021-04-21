@@ -14,6 +14,16 @@
     src: url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 }
 
+#navigation{
+    padding-top:20px;
+}
+
+#logo{
+    height: 50px;
+    width: auto;
+    padding: 5px;
+}
+
 body {
     background-color: #9CAFB7;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
