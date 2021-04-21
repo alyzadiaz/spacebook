@@ -1,7 +1,13 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
 
+
+
 <!-- LOGO -->
+# Spacebook
+
+Check out our [live version](https://alyzadiaz.github.io/spacebook/HTML/home.html) hosted through GitHub pages!
+
 <br/>
 <p align="center">
     <img src="RESOURCES/logo.png">
@@ -12,44 +18,60 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
+      <a href="#introduction">Introduction</a>
+    </li>
+    <li><a href="#getting-started">Getting Started</a>
+        <ul>
+          <li><a href="#installation-and-setup">Installation and Setup</a></li>
+          <li><a href="#run">Run</a></li>
       </ul>
     </li>
-    <li><a href="#live-version">Live Version</a></li>
+    <li><a href="#functions">Functions</a></li>
+    <li><a href="#demo-video">Demo Video</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
-## About The Project
+## Introduction
 <br/>
 <p align="center">
   <img src="RESOURCES/PROJECT IMAGES/spacebook-home.PNG">
 </p>
 
-### Built With
 
-* HTML/CSS/Javascript
-* [PHP](https://www.php.net/)
-* [MySQL](https://www.mysql.com/)
+## Getting Started
 
-## Live Version
-Check out our [live version](https://alyzadiaz.github.io/spacebook/HTML/home.html) hosted through GitHub pages!
+### Installation and Setup
 
-<!-- CONTACT -->
+### Run
+
+
+## Functions
+<ol>
+    <li>Function #1
+        <ul>
+            <li>Sub function</li>
+            <li>Sub function</li>
+        </ul>
+    </li>
+    <li>Function #2
+        <ul>
+            <li>Sub function</li>
+            <li>Sub function</li>
+        </ul>
+    </li>
+</ol>
+
+## Demo Video
+
 ## Contact
 
-Alyza Diaz Rodriguez - [LinkedIn](https://linkedin.com/in/alyzadiaz) - diazrodrigueza@wit.edu
+* Danielle Shackley - shackleyd@wit.edu, Team Lead
+* Alyza Diaz Rodriguez - diazrodrigueza@wit.edu, Developer
+* Elvis De Leon - deleone2@wit.edu, Developer
+* Akeylah Roscoe Hunter - roscoehuntera@wit.edu, Developer
 
-Danielle Shackley - [LinkedIn]() - shackleyd@wit.edu
-
-Elvis De Leon - [Linkedin]() - deleone2@wit.edu
-
-Akeylah Roscoe Hunter - [LinkedIn]() - roscoehuntera@wit.edu
-
-<!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [SpaceX](https://api.spacexdata.com/)
 * [GitHub Pages](https://pages.github.com)
