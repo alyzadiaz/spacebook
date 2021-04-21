@@ -72,6 +72,7 @@ A website with an interactive collection of space missions and rockets.
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
 * [Img Shields](https://shields.io)
+* [Twitter](https://twitter.com)
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/alyzadiaz/spacebook.svg?style=for-the-badge
