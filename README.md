@@ -40,7 +40,7 @@ A website with an interactive collection of space missions and rockets.
   <img src="RESOURCES/PROJECT IMAGES/spacebook-home.PNG">
 </p>
 
-## Features
+## Functions
 1. Interactive Solar System Graphic 
     * Click man made space objects
 2. Search for Specific Space Missions
